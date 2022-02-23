@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #container{
+        display: flex;
+    }
+    #left{
+        height: 100%;
+        width: 40%;
+        background-image: url(https://storage.googleapis.com/lumen5-site-images/website-assets/login-bg3.png);
+    }
+    #right{
+        height: 100%;
+        width: 70%;
+        
+    }
+    #container2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,100px);
+        gap: 20px;
+    }
+    #item{
+        margin: 40px;
+        width: 80%;
+    }
+    #left h1{
+        font-size: 80px;
+        text-align: center;
+        color: white;
+    }
+    #left p{
+        font-size: 35px;
+        color: white;
+    }
+    .logo>img{
+        height: 100%;
+        width: 70%;
+    }
+    #item2{
+        width: 60%;
+        margin: 0px 350px 80px 150px;
+    }
+    #item2 h1{
+        font-size: 60px;
+    }
+    #log{
+        background-color: steelblue;
+        color: white;
+        border-radius: 50px;
+        width: 100%;
+        height: 60px;
+        font-size: 15px;
+        padding:5px;
+        margin-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+    #so:hover{
+        background-color: blue;
+        color: white;
+    }
+    #so{
+    border: solid steelblue;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    height: 70px;
+    width: 100%;
+}
+   #so a:hover{
+        background-color: blue;
+        color: white;
+    }
+    #ema{
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-bottom: 2px solid black;
+        line-height: 50px;
+        outline: none;
+    }
+    #pass{
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-bottom: 2px solid black;
+        line-height: 50px;
+        outline: none;
+    }
+    #pa{
+        display: flex;
+        justify-content: space-between;
+    }
+    #right p{
+        font-size: 20px;
+        font-family: monospace;
+        margin-bottom: 15px;
+
+    }
+    .content-divider {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.content-divider>span {
+    background-color: #eeeded;
+    display: inline-block;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.content-divider>span:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    background-color: #ddd;
+    width: 100%;
+    z-index: -1;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+#con{
+    border: solid rgb(23, 66, 131);
+    text-align: center;
+    padding: 15px 0 15px 0;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 100%;
+}
+#mac{
+    width: 20px;
+    height: 20px;
+    border-radius: 10%;
+}
+#mess{
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="item"> 
+                <a href="https://lumen5.com/">
+            <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/logo-white_266x156.png" alt="" srcset="">
+            </a>
+            <h1>Supercharge your content strategy</h1>
+            <p>Join 800,000+ <br> brands </p>
+                <p> creating videos with Lumen5</p>
+            <div id="container2">
+                <div class="logo">
+                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-seimens-white.png" alt="" srcset="">
+                </div>
+                <div class="logo">
+                     <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sf-white.png" alt="" srcset="">
+                </div>
+                <div class="logo">
+                     <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-merck-white.png" alt="" srcset="">
+                </div>
+                <div class="logo">
+                     <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sap-white.png" alt="" srcset="">
+                </div>
+                <div class="logo">
+                     <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-kpmg-white.png" alt="" srcset="">
+                </div>
+                <div class="logo">
+                     <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-white.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="right">
+    <div id="item2">
+        <form>
+            <h1>Welcome Back!</h1>
+            <p>WORK EMAIL</p>
+            <input id="ema" type="email" style="font-size: 15px;">
+            <div>
+                <h4 id="mess"></h4>
+            </div>
+        <div id="pa">
+            <div>
+            <p>PASSWORD</p>
+            </div>
+            <div>
+            <p style="color: darkgrey;">Show</p>
+         </div>
+    
+        </div>
+            <input id="pass" type="password" style="font-size: 30px;" >
+            <div id="fo">
+            <p  style="text-align: right; color: dimgrey;">Forgot Passoword?</p>
+        </div>
+            <input id="log" type="submit" value="Log In" style="font-size: 15px;">
+        </form>  
+            <div class="content-divider text-muted form-group">
+                <span>OR</span>
+            </div>
+            <div id="con">
+                <a href="https://www.facebook.com/"><img id="mac" src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png" alt=""></a>
+               <a  href="https://www.facebook.com/"> Sign up with facebook</a>
+           </div>
+            
+           <div id="so">
+            <a href="sos.html"><img id="mac" src="data:image/png;base64,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" alt=""></a>
+           <a  href="sos.html"> Sign up with SSO</a>
+         </div>
+        
+            <p>Need a Lumen5 account? <a href="signup.html">Create an account</a></p>
+                
+            <p style="text-align: center; color: dimgrey;">© 2021 Lumen5</p>
+       
+     </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",log);
+    var regUser=JSON.parse(localStorage.getItem("userbase"));
+    function log(event){
+        event.preventDefault();
+        var em=document.querySelector("#ema").value;
+        var pass=document.querySelector("#pass").value;
+           var flag=false;
+        for(var i=0;i<regUser.length;i++){
+            if((em==regUser[i].email)&&(pass==regUser[i].pswd)){
+                flag=true;
+            }
+        }
+        if(flag==true){
+            window.location.href="dashbord.html";
+        }
+        else{
+            document.querySelector("#mess").textContent="Your email or passworrd was incorrect";
+        }
+    }
+    document.querySelector("#fo").addEventListener("click",so)
+    function so(){
+        console.log("click");
+        window.location.href="forgot.html";
+    }
+</script>

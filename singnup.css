@@ -1,0 +1,153 @@
+ #sidebar {
+    height: 610px;
+    width: 100%;
+    max-width: 320px;
+    background-image: url(https://storage.googleapis.com/lumen5-site-images/website-assets/login-bg3.png);
+    background-size: cover;
+    padding: 1.3rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: fixed;
+}
+.logo div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+img{
+    width: 100%;
+    height: 65px;
+}
+.logo-image{
+    width: 45%;
+    height: 80px;
+    margin: 0 0 30px 0;
+}
+.head h1{
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    /* line-height: 1.2; */
+}
+.head h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+    /* line-height: 1.2; */
+}
+#container{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+    input{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #5d6575;
+    background-color: transparent;
+    border-width: 0 0 2px ;
+    border-color: transparent transparent #ddd;
+    margin-bottom: 20px;
+    transition: border-color .15s #ddd,box-shadow .15s ease-in-out;
+    outline:none;
+    }
+    input:focus{
+        border-color: #5846f6;
+    }
+#box{
+    width: 70%;
+    margin-left: 33%;
+}
+#box1{
+    width: 68%;
+    margin-left: 10%;
+    height: 700px;
+}
+#box1 h1{
+    font-size: 35px;
+    font-weight: 900;
+    margin: 0 0 60px 0;
+}
+main{
+    border: 5px solid;
+}
+button{
+    width: 100%;
+    background-color: #5846f6;
+    padding: 12px;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    font-family: "Poppins",sans-serif;
+    letter-spacing: 1px;
+    border: none;
+   
+}
+p{
+    color: #5d6575;
+    font-size: 17px;
+    margin-top: 0px;
+    margin-bottom:5px ;
+}
+#cir{
+    display: flex;
+      
+   justify-content: space-between;
+   padding: 5px 0 20px;
+}
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color:#5846f6;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  h5 {
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    padding: 0 2px 0 2px;
+}
+  
+h5:before,
+h5:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid gray;
+    margin: auto;
+    
+}
+#mac{
+    width: 16px;
+    height: 16px;
+    border-radius: 10%;
+}
+#con{
+    border: solid steelblue;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    border-radius: 100px;
+}
+a{
+   text-decoration: none;
+   font-weight: 500;
+   letter-spacing: 1px;
+   color: steelblue;
+}
+
+#mon:hover{
+    background-color: #2513c7;
+    cursor:pointer;
+}
+.can{
+    color:#24282f;
+    margin-top: 40px;
+
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case studies</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        #box1 {
+            width: 100%;
+            height: 650px;
+            background-color: whitesmoke;
+            display: flex; 
+            justify-content: space-between;
+        }
+        #box3 {
+            width: 600px;
+            align-items: center;
+            margin-right: 150px;
+        }
+        #box4 {
+            width: 950px;
+            height: auto;
+            margin-top: 50px;
+            margin-left: 270px;
+        }
+        #box5 {
+            width: 950px;
+            height: auto;
+            margin-top: 50px;
+            margin-left: 270px;
+        }
+        #img1{
+            width: 350px;
+            height:400px;
+            margin-top: 120px;
+            margin-left: 270px;
+            border-radius: 2%;
+        }  
+        #box2{
+        width: 70%;
+        margin: auto;
+        height: 530px;
+        text-align: center;
+        font-family: sans-serif;
+        background-color: #5846f6;
+        border-radius: 25px;
+    }
+    #h{
+        color: white;
+        margin-top: 40px;
+        width: 70%;
+        padding: 30px;
+       text-align: center;
+       margin: auto;
+       font-size: 40px;
+       line-height: 1.55;
+       letter-spacing: .08em;
+    }
+    #p1{
+        color: white;
+        margin-top: 40px;
+        width: 70%;
+        padding: 30px;
+       text-align: center;
+       margin: auto;
+       font-size: 30px;
+       line-height: 1.2;
+       letter-spacing: .08em;
+    }
+    #btn{
+        height: 70px;
+        width: 12%;
+        border-radius: 30px;
+        font-size: 20px;
+        border: 0;
+        
+    }
+    #btn2 {
+        
+        height: 50px;
+        width: 40%;
+        border-radius: 30px;
+        font-size: 20px;
+        border: 0;
+        background-color: #5846f6;
+        overflow: visible;
+        color: white;
+    }
+    x {
+        width: auto;
+        height: 20px;
+    }
+    #nav1{
+     display: block;
+     width: 100%;
+     height: 50px;
+     border-radius: 10px;
+     padding: 25px 0 0 20px;
+     color:  rgb(54, 53, 53);
+     font-size: 25px;
+     top:0;
+     background-color: white;
+     clear: right;
+     position: absolute;
+     /* position: sticky;
+    top:0; */
+     
+
+ }
+ #left1{
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 200px;
+    height: auto;
+    
+ }
+ #right{
+     display: flex;
+     width: 700px;
+     margin-left: 100px;
+     position: relative;
+     top: -80px;
+     left: 500px;
+     
+     
+     
+ }
+ #right>div{
+     margin: 10px;
+     display: flex;
+ }
+ #right > #sign{
+    padding: 5px;
+    height: 30px;
+   border-radius: 20px;
+   color: white;
+    background-color: blue;
+    
+ }
+ #left{
+     margin-top: -70px;
+     display: flex;
+     
+ }
+ #right > #login{
+    border: 1px solid blue;
+    height: 30px;
+   border-radius: 20px;
+   padding: 5px;
+   color: blue;
+   
+ }
+
+
+    </style>
+</head>
+<body>
+    <div id="nav1">
+        <div id="left" >
+            <img id="left1" src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" alt="">
+        </div>
+        <div id="right">
+        <div onclick="window.location.href='about.html'">Create</div>  
+        <div onclick="window.location.href='pricing.html'">Pricing</div>
+        <div onclick="window.location.href='men.html'">Enterprise</div>
+        <div onclick="window.location.href='casestudies.html'">CaseStudies</div> 
+        <div onclick="window.location.href='about.html'">Learn</div>
+        <div id="login" onclick="window.location.href='loginpage.html'">Login</div>
+        <div id="sign" onclick="window.location.href='SignUp.html'">Signup</div>
+      </div>
+      <div>
+        <div id="box1">
+            <img id="img1" src="https://storage.googleapis.com/lumen5-site-images/website-assets/usecase-dnvgl.png">
+            <div id="box3">
+                <h3 style="font-size: large;">FEATURED CUSTOMER</h3>
+                <h1>How Lumen5 helped DNV GL level up their social media game</h1>
+                <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">"Lumen5 is evolving fast as a company and we have always felt that our feedback has been considered as the platform is optimized. It is encouraging to see that whilst Lumen5 is in a rapid growth phase, they have remained attentive to our needs."</p>
+                <h3>Peter Lovegrove</h3>
+                <p>Media Relations and Video Content Manager</p>  
+                <button id="btn2">Read More</button>
+            </div>
+        </div>
+
+        <div id="box4"></div>
+        <div id="box5"></div>
+        <br>
+        <br>
+        <div id="box2">
+            <h1 id="h">Join 800,000+ companies that are using Lumen5 to tell their stories.</h1>
+        <p id="p1">Lumen5 is a video creation software that helps marketers, publishers, and brands create video content in a breeze, without any technical expertise.</p>
+        <button id="btn"><a href="SignUp.html">Sign Up free</a></button>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+    var data = [
+        {
+            image : "https://storage.googleapis.com/lumen5-site-images/website-assets/usecase-dnvgl.png",
+            logo : "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-dnvgl-grey.png",
+            text : "Increased social media engagement and creating more traffic using our easy-to-use video software.",
+            button : "Read story"
+        },
+        {
+            image : "https://storage.googleapis.com/lumen5-site-images/website-assets/usecase-mhi.png",
+            logo : "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-mhi-grey.png",
+            text : "Hassle-free videos to increase traffic and reduce costs. The answer is to put Lumen5 in the driving seat.",
+            button : "Read story"
+        },
+        {
+            image : "https://storage.googleapis.com/lumen5-site-images/website-assets/usecase-taxevity.png",
+            logo : "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-taxevity-grey.png",
+            text : "Creating visual content that builds audience trust, brings tax to life, and reduces per-video cost by 92%.",
+            button : "Read story"
+        },
+        {
+            image : "https://storage.googleapis.com/lumen5-site-images/website-assets/usecase-nc.png",
+            logo : "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-nc-grey.png",
+            text : "A streamlined video creation process that reached more people, grew their online presence and saved time.",
+            button : "Read story"
+        },
+    ]
+    var box = document.createElement("div")
+        box.style.display="flex"
+        data.map(function(elem)
+        {
+           
+            var box1 = document.createElement("div")
+            box1.style.marginLeft='20px'
+
+            var pic = document.createElement("img")
+            pic.style.width="200px".height="200px"   
+            pic.setAttribute("src",elem.image)
+
+            var x = document.createElement("img")
+            x.style.width="170px"
+            x.setAttribute("src",elem.logo)
+
+            var y = document.createElement("p")
+            y.textContent = elem.text;
+            y.style.width="200px"
+
+            var z = document.createElement("button")
+            z.style.textAlign="right"
+            z.textContent = elem.button;
+
+            box1.append(pic,x,y,z)
+            box.append(box1)
+            document.querySelector("#box4").append(box);
+        })
+
+
+     var got = [
+
+        {
+            image : "https://storage.googleapis.com/lumen5-site-images/website-assets/usecase-cms.png",
+            logo : "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cms-grey.png",
+            text : "Taking video creation from 10 videos per year to 29 videos per month. Continually improving KPIs using Lumen5.",
+            button : "Read story"
+        },
+        {
+            image : "https://storage.googleapis.com/lumen5-site-images/website-assets/usecase-mondadori.jpg",
+            logo : "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-mondadori-grey.png",
+            text : "Learn how Mondadori doubled social media engagement and tripled their video views with Lumen5.",
+            button : "Read story"
+        },
+        {
+            image : "https://storage.googleapis.com/lumen5-site-images/website-assets/usecase-berkshire.png",
+            logo : "https://storage.googleapis.com/lumen5-site-images/logo-berk-cali-grey.png",
+            text : "How Berkshire Hathaway HomeServices California Properties created 500 videos in 10 months",
+            button : "Read story"
+        }
+
+
+    ]
+    var go = document.createElement("div")
+        go.style.display="flex"
+        got.map(function(elem)
+        {
+           
+            var go1 = document.createElement("div")
+            go1.style.margin="auto"
+
+            var pic = document.createElement("img")
+            pic.style.width="200px".height="200px"  
+            pic.setAttribute("src",elem.image)
+
+            var x = document.createElement("img")
+            x.style.width="170px"
+            x.setAttribute("src",elem.logo)
+
+            var y = document.createElement("p")
+            y.textContent = elem.text;
+            y.style.width="200px"
+
+            var z = document.createElement("button")
+            z.style.textAlign="left"
+            z.textContent = elem.button;
+
+            go1.append(pic,x,y,z)
+            go.append(go1)
+            document.querySelector("#box5").append(go);
+        })
+</script>
+

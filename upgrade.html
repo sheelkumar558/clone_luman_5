@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .container1{
+            width:49%;
+            padding: 4%
+        }
+        .container2{
+            
+            height: 600px;
+            padding-left:10%;
+            width:40%;
+            
+            box-sizing: border-box;
+            border-left: 1px solid rgba(150, 141, 141, 0.397);
+        }
+        #card{
+            width:98.5%;
+            height: 25px;
+            border-radius: 5px 5px 0 0;
+            background-size: 30px;
+            background-image: url("https://js.stripe.com/v3/fingerprinted/img/visa-365725566f9578a9589553aa9296d178.svg ") ;
+            /* background-image: url("https://js.stripe.com/v3/fingerprinted/img/mastercard-4d8844094130711885b5e41b28c9848f.svg"); */
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        #card:focus{
+            background-image: none;
+        }
+        input,select{
+            width:98%;
+            height:25px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #mmyycvc{
+            width:48%;
+            border-radius:0 0 5px 5px;
+            border-top: 0;
+        }
+        #subscribe{
+            width:100%;
+            height: 40px;
+            border-radius: 5px;
+            background-color: rgb(88,70,246);
+            color:white;
+            font-size: 17px;
+        }
+        h2{
+            margin-bottom: 3px;
+        }
+        .confirm{
+        
+            text-align: center;
+
+        }
+        img{
+            width:150px;
+        }
+
+       
+       
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <img src="https://d1wqzb5bdbcre6.cloudfront.net/8c362dcde478842886a67b93643f08fd88d3b4242eb0c0e66bafb9c755e1745e/68747470733a2f2f66696c65732e7374726970652e636f6d2f66696c65732f4d44423859574e6a64463878515756476445784961305979546c6c6e65475a6b66475a6662476c325a56393265465a43553246745a304e694e33425265565a4a54573931556d78694d6e593030336b647a76444754" alt="">
+            <h2 class="type"></h2>
+            <h2 class="price"></h2>
+            <p class="per"></p>
+    
+        </div>
+        <div class="container2">
+            <h1>Pay with Card</h1>
+            <form >
+            
+                <input type="email" placeholder="enter your mail">
+               
+                <div>
+                    <h2>card information</h2>
+                    <input id="card" type="text" placeholder="1234 1234 1234 1234 ">
+                    <br>
+                    <input id="mmyycvc" type="text" placeholder="MM/YY">
+                    <input id="mmyycvc"type="text" placeholder="CVC">
+                
+    
+                </div>
+                
+    
+                 <h2>Name on card</h2>
+                <input id="name"type="text">
+    
+                <h2>Country or Region</h2>
+                <select name="country" id="">
+                    <option value="India">India</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="China">China</option>
+                </select>
+                <br>
+                <br><br>
+                
+                
+                <input id="subscribe"type="submit" value="subscribe">
+               
+            </form>
+            <br>
+            <div class="confirm">
+                By confirming your subscription, you allow Lumen5 Technologies Ltd to charge your card for this payment and future payments in accordance with their terms.
+            </div>
+    
+        </div>
+
+    </div>
+    
+   
+    
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",otpEnter)
+    function otpEnter(event){
+        event.preventDefault();
+        window.location.href="otp.html"
+    }
+    document.querySelector("type").textContent=data.type;
+       
+
+</script>

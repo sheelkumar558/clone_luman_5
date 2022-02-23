@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter your otp">
+    <button>check otp</button>
+</body>
+</html>
+<script>
+    
+ 
+    document.querySelector("button").addEventListener("click",checkFun)
+         
+    function checkFun(){
+        var otp=document.querySelector("input").value;
+        console.log(otp);
+        if(otp=="1234")
+        {
+            alert("payment successfull")
+            window.location.href="homepage.html";
+        }
+
+    }
+    
+
+    
+    
+</script>

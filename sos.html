@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   #container{
+        display: flex;
+    }
+    #left{
+        height: 100%;
+        width: 35%;
+        background-image: url(https://storage.googleapis.com/lumen5-site-images/website-assets/login-bg3.png);
+    }
+    #right{
+        height: 100%;
+        width: 70%;
+        
+    }
+    #container2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,100px);
+        gap: 20px;
+    }
+    #item{
+        margin: 40px;
+        width: 80%;
+    }
+    #left h1{
+        font-size: 80px;
+        text-align: center;
+        color: white;
+    }
+    #left p{
+        font-size: 35px;
+        color: white;
+    }
+    .logo>img{
+        height: 100%;
+        width: 70%;
+    }
+    #item2{
+        width: 60%;
+        margin: 300px 400px 100px 200px;
+    }
+    #item2 h1{
+        font-size: 60px;
+    }
+    #ema{
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-bottom: 2px solid black;
+        line-height: 50px;
+        outline: none;
+    }
+    #right p{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    #rq{
+        width: 100%;
+        height: 50px;
+        border-radius: 30px;
+        background-color: steelblue;
+        color: whitesmoke;
+        font-size: 20px;
+        margin-top: 80px;
+        margin-bottom: 90px;
+    }
+    
+    
+  
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="item"> 
+                <a href="https://lumen5.com/">
+            <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/logo-white_266x156.png" alt="" srcset="">
+            </a>
+            <h1>Supercharge your content strategy</h1>
+            <p>Join 800,000+ <br> brands </p>
+                <p> creating videos with Lumen5</p>
+            <div id="container2">
+                <div class="logo">
+                    <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-seimens-white.png" alt="" srcset="">
+                </div>
+                <div class="logo">
+                     <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sf-white.png" alt="" srcset="">
+                </div>
+                <div class="logo">
+                     <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-merck-white.png" alt="" srcset="">
+                </div>
+                <div class="logo">
+                     <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sap-white.png" alt="" srcset="">
+                </div>
+                <div class="logo">
+                     <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-kpmg-white.png" alt="" srcset="">
+                </div>
+                <div class="logo">
+                     <img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-white.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="right">
+    <div id="item2">
+        <form>
+            <h1>Login Via SSO</h1>
+            <p>WORK EMAIL</p>
+            <input id="ema" type="email" style="font-size: 15px;">
+            <input  id="rq" type="submit" value="Login">
+        </form>
+        <p>Don't have sso enabled?
+            <a href="">Login with email & password</a></p>
+
+         <p style="text-align: center; color: dimgrey;">© 2021 Lumen5</p>
+        
+     </div>      
+</body>
+</html>

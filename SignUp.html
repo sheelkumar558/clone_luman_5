@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="singnup.css">
+</head>
+<body>
+ <div id="container">
+    <div id="sidebar">
+        <img class="logo-image" src="https://storage.googleapis.com/lumen5-site-images/L5-logo/logo-white_266x156.png" alt="Lumen5 Logo"></a>
+        <div class="head">
+            <h1>Supercharge your content strategy</h1>
+            <h2>Join 800,000+ brands creating<br>videos with Lumen5</h2>
+             </div>
+            <div class="logo">
+                <div>
+                    <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-seimens-white.png" alt="Customer logo"></div>
+                    <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sf-white.png" alt="Customer logo"></div>
+                    <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-merck-white.png" alt="Customer logo"></div>
+                    <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-sap-white.png" alt="Customer logo"></div>
+                    <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-kpmg-white.png" alt="Customer logo"></div>
+                    <div><img src="https://storage.googleapis.com/lumen5-site-images/website-assets/logo-cisco-white.png" alt="Customer logo"></div>
+                </div>
+            </div>
+            </div>
+<div id="box">
+  <div id="box1">
+    <form>
+        <h1>Get started with a free account</h1>
+        <p>FULL NAME</p>
+       <input type="text" id="nam">
+       <p>WORK EMAIL</p>
+       <input type="email" id="eml">
+       <p>PASSWORD</p>
+       <input type="password" id="pass">
+   
+       <div id="cir">
+           <div>
+            <span><p> <i class="dot"></i> One lowercase character</p></span>
+            <span><p><i class="dot"></i> One uppercase character</p></span>
+           </div>
+           <div>
+            <span><p><i class="dot"></i> 8 characters minimum</p></span>
+            <span></i><p> <i class="dot"></i> Contains a number or symbol</p></span></div>
+           </div>
+           <button type="submit" id="mon">Create account</button>
+          
+           <h5>OR</h5>
+           <div id="con">
+                <a href="https://www.facebook.com/"><img id="mac" src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png" alt=""></a>
+               <a  href="https://www.facebook.com/"> Sign up with facebook</a>
+           </div>
+           <p class="can">Already have a lumen5 account? <a href="loginpage.html">Log In</a></p>
+        </form>
+  </div>
+</div>
+ </div>
+</body>
+</html>
+
+
+
+
+<script>
+   
+    document.querySelector("form").addEventListener("submit",Getvalue);
+    let userdata=JSON.parse(localStorage.getItem("userbase"))||[];
+    function Getvalue(event){
+       
+        event.preventDefault();
+       let Nam=document.querySelector("#nam").value;
+       let Eml=document.querySelector("#eml").value;
+       let Pas=document.querySelector("#pass").value;
+       let user={
+           name:Nam,
+           email:Eml,
+           pswd:Pas
+       }
+       console.log(userdata)
+       userdata.push(user)
+       localStorage.setItem("userbase",JSON.stringify(userdata));
+       alert("Sign Up success")
+       window.location.href="homepage.html";
+    }
+</script>

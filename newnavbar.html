@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        #nav1{
+     display: flex;
+     width: 500px;
+     height: 50px;
+     border-radius: 10px;
+     padding: 25px 0 0 20px;
+     color:  rgb(54, 53, 53);
+     font-size: 25px;
+     position: sticky;
+     top:0;
+     background-color: white;
+     font-family: Arial, Helvetica, sans-serif;
+
+ }
+ #left1{
+    margin-top: 15px;
+    margin-left: 60px;
+ }
+ #right{
+     display: flex;
+     width: 100%;
+     justify-content: space-around;
+     margin-left: 300px;
+     
+     
+     
+ }
+ #right>div{
+     margin: 10px;
+ }
+ #right > #sign{
+   padding: 5px;
+    height: 30px;
+   border-radius: 20px;
+   color: white;
+    background-color: blue;
+    
+ }
+ #left{
+     margin-top: -70px;
+     
+ }
+ #right > #login{
+    border: 1px solid blue;
+    height: 30px;
+   border-radius: 20px;
+   padding: 5px;
+   
+   color: blue;
+   
+ }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="nav1">
+        <div id="left" >
+            <img id="left1" src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" alt="">
+        </div>
+        <div id="right">
+        <div onclick="window.location.href='about.html'">Create</div>
+       
+        <div onclick="window.location.href='women.html'">Pricing</div>
+        <div onclick="window.location.href='men.html'">Enterprise</div>
+        <div onclick="window.location.href='login.html'">CaseStudies</div>
+        
+        <div onclick="window.location.href='about.html'">Learn</div>
+        <div id="login" onclick="window.location.href='about.html'">Login</div>
+        <div id="sign" onclick="window.location.href='signup.html'">Signup</div>
+      </div>
+    
+</body>
+</html>
